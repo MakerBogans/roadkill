@@ -20,6 +20,7 @@ The RKE family of toolhead boards are based off the roadkill board designed xbst
 - Nylon or printed washers should be used to protect the mounting holes due to the proximity of the traces to the holes.
 - LED port is designed for neopixels and uses a common 5V rail with the filament sensor port.
 - Probe port has a 24V power rail.
+- <b>Do not connect a wire between the MCU and the Roadkill probe port, this will result in backfeeding 24V into the MCU</b>
 
 ## BOM
 
