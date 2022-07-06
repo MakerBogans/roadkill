@@ -72,7 +72,7 @@ It is critical to wire Z probe correctly to avoid damage to MCU. Follow the belo
 
 |  |  |
 | --- | --- |
-| ![](roadkill/wiring/ProbeSpecific/klippy.png)  | ![](roadkill/wiring/ProbeSpecific/Inductive.png) |
+| ![](roadkill/wiring/ProbeSpecific/Klippy.png)  | ![](roadkill/wiring/ProbeSpecific/Inductive.png) |
 | ![](roadkill/wiring/ProbeSpecific/Euclid5V.png)| ![](roadkill/wiring/ProbeSpecific/Euclid24V.png)  |
 
 # Troubleshooting
