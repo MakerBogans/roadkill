@@ -67,6 +67,14 @@ RKE Long utilises a combined Filament Sensor and X endstop port pinout is below.
 
 ![](roadkill/images/Schematic.png)
 
+# Probe Wiring
+It is critical to wire Z probe correctly to avoid damage to MCU. Follow the below wiring guides
+
+|  |  |
+| --- | --- |
+| ![](roadkill/wiring/ProbeSpecific/klippy.png)  | ![](roadkill/wiring/ProbeSpecific/Inductive.png) |
+| ![](roadkill/wiring/ProbeSpecific/Euclid5V.png)| ![](roadkill/wiring/ProbeSpecific/Euclid24V.png)  |
+
 # Troubleshooting
 
 | Number | Symptoms | Cause | Solution |
