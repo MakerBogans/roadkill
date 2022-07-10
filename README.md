@@ -19,7 +19,9 @@ The RKE family of toolhead boards are based off the roadkill board designed xbst
 - Heater screw terminal is polarised, as the 24V supply is used as a common rail.
 - Nylon or printed washers should be used to protect the mounting holes due to the proximity of the traces to the holes.
 - LED port is designed for neopixels and uses a common 5V rail with the filament sensor port.
-- Probe port has a 24V power rail.
+- Probe port has a 24V power rail derived from the heater.
+
+&#9888;<b>Do not connect a wire between the MCU and the Roadkill probe port for V, this will result in backfeeding 24V into the MCU. V is provided from the Heater</b>
 
 ## BOM
 
@@ -64,6 +66,21 @@ RKE Long utilises a combined Filament Sensor and X endstop port pinout is below.
 # Schematic
 
 ![](roadkill/images/Schematic.png)
+
+# Probe Wiring
+It is critical to wire Z probe correctly to avoid damage to MCU. Follow the below wiring guides
+
+|  |  |
+| --- | --- |
+| ![](roadkill/wiring/ProbeSpecific/Klippy.png)  | ![](roadkill/wiring/ProbeSpecific/Inductive.png) |
+| ![](roadkill/wiring/ProbeSpecific/Euclid5V.png)| ![](roadkill/wiring/ProbeSpecific/Euclid24V.png)  |
+
+# Troubleshooting
+
+| Number | Symptoms | Cause | Solution |
+|---| --- | --- | --- |
+| 1 | X endstop is permently triggered or not triggering | X end stop is shorted to GND on the MCU->Roadkill board, S is connected to G on the X endstop port  | Swap X endstop pins on the MCU->Roadkill board |
+| 2 | Probe disconnecting when heater is turned  on, Flickering Probe during PWM control of the Probe | Reversed Polarity on the 24 V Screw terminal on the MCU->Roadkill board | Swap  Heater Wires on the MCU->Roadkill board |
 
 # License
 
