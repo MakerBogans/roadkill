@@ -68,17 +68,17 @@ RKE Long and RK36 utilise a combined Filament Sensor and X endstop port pinout i
 ![](roadkill/images/Schematic.png)
 
 # Wiring Harness Guide
-![](roadkill/RKE2_harness_guide.pdf)
+
+[Harness Guide](/roadkill/RKE2_harness_guide.pdf)
 
 # Probe Wiring
 It is critical to wire Z probe correctly to avoid damage to MCU. Follow the below wiring guides
 RK36v2 and the RKE2PJ board have probe voltage jumpers to disconnect the probe voltage pin entirely unless correctly configured. Both 5v and 24v are selectable.
 RK36 solder pad jumpers are located on the rear of the board. 
 
-| ![](roadkill/images/RK36.png)| ![](roadkill/images/RKE2PJ.png) |
-
 |  |  |
 | --- | --- |
+| ![](roadkill/images/RK36.png)| ![](roadkill/images/RKE2PJ.png)  |
 | ![](roadkill/wiring/ProbeSpecific/Klippy.png)  | ![](roadkill/wiring/ProbeSpecific/Inductive.png) |
 | ![](roadkill/wiring/ProbeSpecific/Euclid5V.png)| ![](roadkill/wiring/ProbeSpecific/Euclid24V.png)  |
 
