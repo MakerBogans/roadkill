@@ -69,10 +69,15 @@ RKE Long and RK36 utilise a combined Filament Sensor and X endstop port pinout i
 
 # Wiring Harness Guide
 This guide should help you crimp the cables between your MCU and gantry RKE2 PCB.
+
 [Harness Guide](/roadkill/RKE2_harness_guide.pdf)
+
 You can follow the voron guide for lengths here:
+
 [Trident](https://docs.vorondesign.com/build/electrical/trident_gantry_wires.html)
+
 [2.4](https://docs.vorondesign.com/build/electrical/v2_gantry_wires.html)
+
 # Probe Wiring
 It is critical to wire Z probe correctly to avoid damage to MCU. Follow the below wiring guides
 RK36v2 and the RKE2PJ board have probe voltage jumpers to disconnect the probe voltage pin entirely unless correctly configured. Both 5v and 24v are selectable.
