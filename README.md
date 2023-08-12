@@ -3,7 +3,7 @@
 
 # Roadkill Enhanced Toolhead PCB Family
 
-The RKE family of toolhead boards are based off the roadkill board designed xbst\_ but offers numerous improvements.
+The RKE family of toolhead boards are based off the roadkill board designed by xbst\_ but offers numerous improvements.
 
 - Heater current capacity is greatly improved offering 5A of capacity on the RKE-Long board and 6A on RKE<sup>2</sup>.
 - Support for simultaneous use of neopixels, filament sensor, inductive probe and x endstop switch with dedicated ports for all features.
@@ -57,7 +57,7 @@ For RKE<sup>2</sup>
 | Extruder Stepper | A1 (19)          | A2 (17)         | B1 (15)         | B2 (13)         |
 | Heater           | 24 V (1,3)       | HE GND (5,7)    | -               | -               |
 
-RKE Long utilises a combined Filament Sensor and X endstop port pinout is below.
+RKE Long and RK36 utilise a combined Filament Sensor and X endstop port pinout is below.
 
 | Port                | Pin 1 (IDC PIN) | Pin 2 (IDC PIN) | Pin 3 (IDC PIN) | Pin 4 (IDC PIN) |
 | ------------------- | --------------- | --------------- | --------------- | --------------- |
@@ -67,8 +67,15 @@ RKE Long utilises a combined Filament Sensor and X endstop port pinout is below.
 
 ![](roadkill/images/Schematic.png)
 
+# Wiring Harness Guide
+![](roadkill/RKE2_harness_guide.pdf)
+
 # Probe Wiring
 It is critical to wire Z probe correctly to avoid damage to MCU. Follow the below wiring guides
+RK36v2 and the RKE2PJ board have probe voltage jumpers to disconnect the probe voltage pin entirely unless correctly configured. Both 5v and 24v are selectable.
+RK36 solder pad jumpers are located on the rear of the board. 
+
+| ![](roadkill/images/RK36.png)| ![](roadkill/images/RKE2PJ.png) |
 
 |  |  |
 | --- | --- |
